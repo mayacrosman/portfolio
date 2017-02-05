@@ -22,12 +22,12 @@ body {
 
 ::selection {
     color: #fff;
-    background: #CC4646;
+    background: #9A0002;
 }
 
 ::-moz-selection {
     color: #fff;
-    background: #CC4646;
+    background: #9A0002;
 }
 
 p {
@@ -69,7 +69,7 @@ p {
     }
 
 a {
-    color: #CC4646;
+    color: #FFFFFF;
     text-decoration: none;
     text-shadow: none;
     -webkit-transition: all 0.2s linear;
@@ -80,7 +80,7 @@ a {
 }
 
     a:hover {
-        color: #DF3927;
+        color: #9A0002;
         text-decoration: none;
     }
 
@@ -89,11 +89,11 @@ a {
     border-radius: 0px;
 }
 .btn:hover {
-background: #E24040;
+background: #9A0002;
 }
 
 .btn-primary {
-    background: #CC4646;
+    background: #9A0002;
 }
 
 .form-control {
@@ -127,6 +127,90 @@ img {
     vertical-align: text-top;
     padding: 5%;
 
+}
+
+.buttonDownload {
+    display: inline-block;
+    position: relative;
+    padding: 10px 25px;
+
+    background-color: #4CC713;
+    color: white;
+
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+}
+
+.buttonDownload:hover {
+    background-color: #333;
+    color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+    width: 10px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+
+    animation: downloadArrow 2s linear infinite;
+    animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+    border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+    border-top-color: #4CC713;
+    animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+    /* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+    0% {
+        margin-top: -7px;
+        opacity: 1;
+    }
+
+    0.001% {
+        margin-top: -15px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 0;
+        opacity: 0;
+    }
 }
 
 #download {
@@ -163,7 +247,7 @@ img {
     bottom: 20px;
     right: 20px;
     z-index: 5;
-	background: #CC4646;
+	background: #9A0002;
 }
 .topHome .fa-2x {
 font-size: 20px;
@@ -171,12 +255,6 @@ color:#fff;
 margin: 4px;
 }
 
-
-#square {
-    width: 100px;
-    height: 100px;
-    background: red;
-}
 
 
 /* Header 
@@ -192,8 +270,8 @@ margin: 4px;
 }
 
 .navbar-inverse .navbar-toggle {
-    border-color: #CC4646;
-    background-color: #CC4646;
+    border-color: #8e0002;
+    background-color: #9A0002;
 }
 .header .navbar {
 margin: 0;
@@ -204,11 +282,11 @@ background: transparent !important;
     }
 
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-        background: #CC4646;
+        background: #9A0002;
     }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #CC4646;
+    color: #9A0002;
 }
 
 .navbar-inverse .navbar-toggle:hover .icon-bar {
@@ -229,7 +307,7 @@ background: none;
 /*.carousel-inner*/
 #myCarousel {
     margin-top: 50px;
-    border-bottom: 4px solid #CC4646;
+    border-bottom: 4px solid #9A0002;
 }
 
 .carousel-inner > .item {
@@ -261,7 +339,7 @@ background: none;
 
 .actionPanel {
     padding: 25px 0;
-    background: #CC4646;
+    background: #9A0002;
 }
 
     .actionPanel h3 {
@@ -269,7 +347,7 @@ background: none;
     }
 
 .circle {
-    background: #CC4646;
+    background: #9A0002;
     height: 60px;
     width: 60px;
     border-radius: 35px;
@@ -350,7 +428,7 @@ background: none;
     }
 
 .page-section h2 {
-    color: #CC4646;
+    color: #9a0002;
 }
 
 .page-section p {
@@ -363,7 +441,7 @@ background: none;
 }
 
     .darkBg .fa {
-        color: #CC4646;
+        color: #9A0002;
     }
 /*--- Banner ----*/
 .banner-container {
@@ -512,7 +590,7 @@ margin-top: 5px;
 background-color: #D6D6D6;
 }
 .progress .progress-bar {
-background-color: #CC4646;
+background-color: #9A0002;
 }
 /*Skills*/
 
@@ -528,7 +606,7 @@ background-color: #CC4646;
   position: absolute;
   content: " ";
   width: 2px;
-  background-color: #CC4646;
+  background-color: #9A0002;
   left: 50%;
   margin-left: -1.5px;
 }
@@ -761,13 +839,13 @@ nav#filter {
     nav#filter a {
         padding: 4px 12px;
         line-height: 20px;
-        border: 1px solid #CC4646;
+        border: 1px solid #ffffff;
         text-decoration: none;
     }
 
 .current {
-    background: #CC4646;
-    color: #fff;
+    background: #ffffff;
+    color: #000000;
 }
 
 .portfolio-items article img {
@@ -949,7 +1027,7 @@ footer {
 }
 
 .social a:hover {
-    color: #c0392b;
+    color: #9A0002;
 }
 
 .social a {
