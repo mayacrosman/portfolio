@@ -829,6 +829,8 @@ display: inherit;
 
 nav#filter {
     margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    display: block;
 }
 
     nav#filter li {
@@ -881,7 +883,12 @@ nav#filter {
 
 .fancybox-overlay {
     background: rgba(0, 0, 0, 0.64);
+    z-index:9999 !important;
 }
+
+.fancybox-wrap{z-index:99999 !important}
+
+
 
 .portfolio-item:hover .portfolio-desc {
     padding-top: 20%;
