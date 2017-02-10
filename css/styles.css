@@ -70,7 +70,7 @@ p {
     }
 
 a {
-    color: #FFFFFF;
+    color: #000000;
     text-decoration: none;
     text-shadow: none;
     -webkit-transition: all 0.2s linear;
@@ -821,7 +821,7 @@ display: inherit;
 }
 
 #portfolio {
-    background:rgb(24, 24, 24);
+    background: #fff;
 }
 
     #portfolio img {
@@ -847,7 +847,7 @@ nav#filter {
     nav#filter a {
         padding: 4px 12px;
         line-height: 20px;
-        border: 1px solid #ffffff;
+        border: 1px solid #000000;
         text-decoration: none;
     }
 
